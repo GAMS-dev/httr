@@ -1,11 +1,15 @@
 Package: httr
-Title: Tools for Working with URLs and HTTP
-Version: 1.4.1.9000
+Title: Tools for Working with URLs and HTTP (remove openssl dependency for MIRO)
+Version: 1.4.1.9999
 Authors@R: 
     c(person(given = "Hadley",
              family = "Wickham",
              role = c("aut", "cre"),
              email = "hadley@rstudio.com"),
+      person(given = "Frederik",
+             family = "Proske",
+             role = c("ctb"),
+             email = "fproske@gams.com"),
       person(given = "RStudio",
              role = "cph"))
 Description: Useful tools for working with HTTP organised by
@@ -21,12 +25,12 @@ Imports:
     curl (>= 3.0.0),
     jsonlite,
     mime,
-    openssl (>= 0.8),
     R6
 Suggests:
     covr,
     httpuv,
     jpeg,
+    openssl (>= 0.8),
     knitr,
     png,
     readr,
