@@ -1,5 +1,8 @@
 # httr (development version)
 
+* `parse_url()` now refers to RFC3986 for the parsing of the URL's 
+  scheme, with a bit more permissive syntax (@ymarcon, #615).
+
 # httr 1.4.1
 
 * Remove the default `cainfo` option on Windows. Providing a CA bundle is not 
@@ -15,6 +18,8 @@
 
 * `RETRY()` now throws the correct error message if an error occurs during the 
   request (@austin3dickey, #581).
+
+* `VERB()` and `RETRY()` now automatically uppercase methods (@patr1ckm, #571).
 
 # httr 1.4.0
 
